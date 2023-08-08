@@ -1,5 +1,5 @@
 class Tag {
-    
+
     static get indentSize() { return 2; }
 
     constructor(name = '', text = '') {

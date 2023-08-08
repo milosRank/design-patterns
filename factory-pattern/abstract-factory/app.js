@@ -64,14 +64,14 @@ class HotDrinkMachine {
 
     interact(consumer) {
         rl.question('Please specify drink and amount (e.g., tea 50): ',
-        answer => {
-            let parts = answer.split(' ');
-            let name = parts[0];
-            let amount = parseInt(parts[1]);
-            let d = this.factories[name].prepare(amount);
-            rl.close();
-            consumer(d);
-        });
+            answer => {
+                let parts = answer.split(' ');
+                let name = parts[0];
+                let amount = parseInt(parts[1]);
+                let d = this.factories[name].prepare(amount);
+                rl.close();
+                consumer(d);
+            });
     }
 }
 
