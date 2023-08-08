@@ -114,7 +114,7 @@ class PersonBuilder {
     get lives() {
         return new PersonAddressBuilder(this.person);
     }
-    
+
     build() {
         return this.person;
     }
